@@ -23,7 +23,7 @@
     padding: 20px;
 }
 
-@media (min-width: 40.0rem) {
+@media (min-width: 80.0rem) {
   #desc {
     padding: 0 300px;
   }

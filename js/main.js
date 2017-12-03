@@ -10,7 +10,6 @@ closeNav();
 
 /* Open when someone clicks on the span element */
 function openNav() {
-  debugger;
   document.getElementById("myNav").style.display = "block";
 }
 
