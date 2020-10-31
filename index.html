@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nathannael Morais Martins</title>
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
@@ -10,43 +11,43 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
 
     <!-- Milligram CSS minified -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/overlay.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="info">
         <div class="row">
-          <div class="column">
+          <div class="col-sm-12">
             <h1 class="name">Nathannael Morais Martins</h1>
             <a id="email" href="mailto:nathannael2009@gmail.com">Nathannael2009@gmail.com</a>
           </div>
         </div>
         <hr>
         <div class="row">
-          <div class="column">
-            <a class="button" id="about">About</a>
-            <a class="button" href="https://linkedin.com/in/nathannael" target="_blank">LinkedIn</a>
-            <a class="button" href="https://github.com/nathannael"  target="_blank">GitHub</a>
-            <a class="button" href="#">Blog</a>
-            <!-- <a class="button" href=">Email</a> -->
+          <div class="col-sm-12">
+            <a class="button btn btn-dark" href="#" id="about" role="button">About</a>
+            <a class="button btn btn-dark" href="https://linkedin.com/in/nathannael" id="about" role="button">LinkedIn</a>
+            <a class="button btn btn-dark" href="https://github.com/nathannael" id="about" role="button">GitHub</a>
+            <a class="button btn btn-dark" href="#" role="button">Blog</a>
           </div>
         </div>
         <div class="row">
-          <div class="column">
-            <a class="button" href="https://twitter.com/nathannmorais" target="_blank">Twitter</a>
-            <a class="button" href="https://facebook.com/nathann.morais" target="_blank">Facebook</a>
-            <a class="button" href="https://trakt.tv/users/nathann" target="_blank">Trakt</a>
-            <a class="button" href="https://open.spotify.com/user/nathannmorais" target="_blank">Spotify</a>
+          <div class="col-sm-12">
+            <a class="button btn btn-dark" href="https://twitter.com/nathannmorais" target="_blank" role="button"  >Twitter</a>
+            <a class="button btn btn-dark" href="https://facebook.com/nathann.morais" target="_blank" role="button"  >Facebook</a>
+            <a class="button btn btn-dark" href="https://trakt.tv/users/nathann" target="_blank" role="button" >Trakt</a>
+            <a class="button btn btn-dark" href="https://open.spotify.com/user/nathannmorais" target="_blank" role="button"  >Spotify</a>
           </div>
         </div>
         <div class="row">
-          <div class="column">
-            <a href="javascript:void(0)" id="pt">PT-BR</a>
+          <div class="col-sm-12">
+            <a href="javascript:void(0)" id="toggle-pt">PT-BR</a>
             <span>&nbsp;|&nbsp;</span>
-            <a href="javascript:void(0)" id="en">EN</a>
+            <a href="javascript:void(0)" id="toggle-en">EN</a>
           </div>
         </div>
       </div>
@@ -60,12 +61,34 @@
 
       <!-- Overlay content -->
       <div class="overlay-content">
-        <h1 id="greeting"> Hi, I'm Nathann!</h1>
-        <hr>
-        <p id="desc">I'm 22 years old, and I'm a web developer. I like all that things that go beep-boop,
-          so in my free time I'll probably be reading something about technology, studying something related to
-          software development (I was just watching stuff on Elixir and Go the other day) or listening to
-          electronic music. Feel free to say hi on my socials on the main page!</p>
+        <div class="description" id="en">
+          <h1 id="greeting"> Hi, I'm Nathann!</h1>
+          <hr>
+          <div>
+            <p>I'm 24 years old, and I'm a Fullstack web developer, mainly focused on the Ruby on Rails framework.
+              I'm passionate about technology and all the things we're able to do with computers. So when I'm not programming or
+              studying about software development, I'm probably reading something about gadgets or listening to electronic music.</p>
+            <p>I'm also one of the organizers for GDG Fortaleza, an independent community that's part of the GDG
+              (Google Developers Group) program. Our main goal is to foster colaboration within our community and share knowledge
+              between our members.</p>
+            <p>Feel free to say hi on my socials on the main page!</p>
+          </div>
+        </div>
+
+        <div class="description" id="pt-br">
+          <h1 id="greeting"> Olá, meu nome é Nathann!</h1>
+          <hr>
+          <div>
+            <p>Tenho 24 anos e sou um desenvolvedor web full stack, focado principalmente no framework Ruby on Rails.
+              Sou um entusiatas de tecnologia, e todas as coisas que podemos fazer com computadores. Então quando eu não estou programando
+              software ou estudando algo sobre desenvolvimento de software, provavelemnte estou lendo algo sobre gadgets ou escutando
+              música eletrônica. </p>
+            <p>Também sou um dos organizadores do GDG Fortaleza, uma comunidade independente que faz parte do
+              GDG (Google Developers Group - Grupo de Desenvolvedores Google). Nosso principal objetivo é encorajar a colaboração
+              entre membros da comunidade e compartilhar conhecimento entre os membros.</p>
+            <p>Sinta-se livre para entrar em contato comigo nas minhas redes sociais que estão na página principal!</p>
+          </div>
+        </div>
       </div>
 
     </div>

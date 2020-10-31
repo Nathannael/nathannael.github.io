@@ -3,10 +3,14 @@ body {
   height: 100%;
 }
 
-.container {
+.row {
+  margin-bottom: 5px;
+}
+
+.container-fluid {
   background-color: #f4f5f6;
   border-radius: 10px;
-  padding: 5PX;
+  padding: 50px;
   display: block;
   margin: 0 auto;
   position: absolute;
@@ -19,34 +23,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.button {
-  width: 40% !important;
-}
-
-@media (min-width: 40.0rem) {
-  .container {
-    background-color: #f4f5f6;
-    border-radius: 10px;
-    padding: 50px;
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    height: 90%;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .button {
-    width: 150px !important;
-  }
 }
 
 .info {
